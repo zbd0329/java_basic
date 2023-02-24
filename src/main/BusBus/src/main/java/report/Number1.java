@@ -14,11 +14,13 @@ public class Number1 {
         bus1.refuelingAmount = 100; //1004번 버스 주유량
         bus1.speed = 0; //1004번 버스의 속도 초기화 0
         bus1.passengers = 0; //1004번 버스 승객 0명
+        bus1.state = "운영중";
 
         bus2.number = 990; //1004번 버스
         bus2.refuelingAmount = 100; //주유량 초기화
         bus2.speed = 0; //버스의 속도 초기화 0
         bus2.passengers = 0; //버스의 속도 초기화 0
+        bus2.state = "운영중";
 
         System.out.println("1단계");
         System.out.println("버스1 생성 완료");
@@ -41,10 +43,12 @@ public class Number1 {
         bus1.refuel(-50); //4.연료 50소비
             System.out.println("3번4. 남은 연료량 = " +bus1.refuelingAmount);
         //5 버스 상태변경 어떻게 하는지 모름
-            System.out.println("5. 못풀음 차고지행을 어떻게 하는가");
+        bus1.state();
+        System.out.println(bus1.state);
 
         bus1.refuel(10); //6-a.주유량 +10
             System.out.println("7-2.현재 주유상태 "+bus1.refuelingAmount); //7 출력
+            System.out.println("7-2.현재 주유상태 "+bus1.state); //7 출력
 
         //8 상태변경 어떻게 하는지 모름
         bus1.inPassengers(45);//9. 버스 승객 45명 추가
