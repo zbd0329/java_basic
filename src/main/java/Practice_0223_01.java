@@ -18,6 +18,8 @@ public class Practice_0223_01 {
         Main method = new Main();
         String s = "OXOOOXXXOXOOXOOOOOXO";
         System.out.println(method.solution(s));
+
+
     }
 
 }
